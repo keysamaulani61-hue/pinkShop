@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Online - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛍️ PinkShop</h1>
+    <nav>
+      <a href="index.html">🏠Home</a>
+      <a href="cart.html">🛒Keranjang </a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Produk Pilihan</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Produk 1">
+        <h3>Tas Cantik</h3>
+        <p>Rp 75.000</p>
+        <button onclick="addToCart('Tas Cantik', 75000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Produk 2">
+        <h3>Sepatu Stylish</h3>
+        <p>Rp 120.000</p>
+        <button onclick="addToCart('Sepatu Stylish', 120000)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Produk 3">
+        <h3>Dompet Pink</h3>
+        <p>Rp 50.000</p>
+        <button onclick="addToCart('Dompet Pink', 50000)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 pinkShop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

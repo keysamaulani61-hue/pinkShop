@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💳 Pembayaran</h1>
+    <nav>
+      <a href="index.html">🏠Home</a>
+      <a href="cart.html">🛒Keranjang</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>💳Total Pembayaran: Rp <span id="total-bayar">0</span></h2>
+
+    <label for="metode">Pilih Metode Pembayaran:</label>
+    <select id="metode">
+      <option value="DANA">DANA</option>
+      <option value="OVO">OVO</option>
+      <option value="GoPay">GoPay</option>
+      <option value="Transfer Bank">Transfer Bank</option>
+    </select>
+
+    <button onclick="prosesPembayaran()">💳Bayar Sekarang</button>
+    <p id="status"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 PinkShop</p>
+  </footer>
+
+  <script src="bayar.js"></script>
+</body>
+</html>
